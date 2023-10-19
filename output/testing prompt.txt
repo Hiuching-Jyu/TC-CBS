@@ -1,4 +1,7 @@
 -m input/SmallSpecialMaps/line-1-4.map -a input/SmallSpecialMaps/line-1-4.scen -o output/Group2/line-1-4.csv -k 2 -t 60 -s 3
 -m input/SmallSpecialMaps/Cross1.map -a input/SmallSpecialMaps/Cross1-3.scen -o output/Group2/Cross.csv -k3 -t 60 -s 3
 -m input/SmallSpecialMaps/LetterT1.map -a input/SmallSpecialMaps/LetterT1-3.scen -o output/Group2/LetterT.csv -k 3 -t 60 -s 3
--m input/maze-8-8.map -a input/maze-8-8/maze-8-8-random-1.scen -o output/Group2/maze-9-9.csv -k 3 -t 60 -s 3
+-m input/maze-8-8.map -a input/maze-8-8/maze-8-8-random-1.scen -o output/Group2/maze-8-8.csv -k 3 -t 60 -s 3
+-m input/SmallComplicated/SmallConnector.map -a input/SmallComplicated/SmallConnector.scen -o output/Group2/Smallcomplicated.csv -k 4 -t 60 -s 3
+-m input/SmallComplicated/SmallLoopchain.map -a input/SmallComplicated/SmallLoopchain.scen -o output/Group2/Smallcomplicated.csv -k 7 -t 60 -s 3
+-m input/SmallComplicated/SmallString.map -a input/SmallComplicated/SmallString.scen -o output/Group2/Smallcomplicated.csv -k 5 -t 60 -s 3
