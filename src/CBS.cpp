@@ -942,7 +942,7 @@ bool CBS::solve(const Instance& instance, double _time_limit, int _cost_lowerbou
                 makespan_limit = pow(abs(num_of_vertex), abs(num_of_agents));
 //                cout << "num of vertex: " << num_of_vertex << endl;
 //                cout << "num of agents: " << num_of_agents << endl;
-//                cout << "makespan: " << makespan  <<  ",  makespan_limit  " << makespan_limit <<  endl;
+                cout << "makespan: " << makespan  <<  ",  makespan_limit  " << makespan_limit <<  endl;
             } else {
 //                cout << "number of agents " << num_of_agents << endl;
                 makespan_limit = 9999999;
