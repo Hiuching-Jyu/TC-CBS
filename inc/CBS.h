@@ -20,23 +20,23 @@ public:
 	double runtime_build_CAT = 0; // runtime of building conflict avoidance table
 	double runtime_path_finding = 0; // runtime of finding paths for single agents
 	double runtime_detect_conflicts = 0;
-    double runtime_dupConflict = 0;
+    	double runtime_dupConflict = 0;
 	double runtime_preprocessing = 0; // runtime of building heuristic table for the low level
-    long long num_of_descendants = 0;
+    	long long num_of_descendants = 0;
 
 	uint64_t num_corridor_conflicts = 0;
 	uint64_t num_rectangle_conflicts = 0;
 	uint64_t num_target_conflicts = 0;
 	uint64_t num_mutex_conflicts = 0;
 	uint64_t num_standard_conflicts = 0;
-    long long num_duplicate_conflicts = 0;
+    	long long num_duplicate_conflicts = 0;
 
 
 	uint64_t num_adopt_bypass = 0; // number of times when adopting bypasses
 
 	uint64_t num_HL_expanded = 0;
 	uint64_t num_HL_generated = 0;
-    uint64_t num_LL_expanded = 0;
+   	uint64_t num_LL_expanded = 0;
 	uint64_t num_LL_generated = 0;
 
 	CBSNode* dummy_start = nullptr;
@@ -57,9 +57,9 @@ public:
 	void setMutexReasoning(bool m) {mutex_reasoning = m; heuristic_helper.mutex_reasoning = m; }
 	void setDisjointSplitting(bool d) {disjoint_splitting = d; heuristic_helper.disjoint_splitting = d; }
 	void setBypass(bool b) { bypass = b; } // 2-agent solver for heuristic calculation does not need bypass strategy.
-    void setDuplicate(bool u){ dupConflict = u; }
+    	void setDuplicate(bool u){ dupConflict = u; }
 
-    void setNodeLimit(int n) { node_limit = n; }
+    	void setNodeLimit(int n) { node_limit = n; }
 	void setSavingStats(bool s) { save_stats = s; heuristic_helper.save_stats = s; }
 
 	////////////////////////////////////////////////////////////////////////////////////////////
@@ -88,7 +88,7 @@ private:
 	bool bypass; // using Bypass1
 	bool PC; // prioritize conflicts
 	bool save_stats;
-    bool dupConflict;
+    	sbool dupConflict;
 
 
 	MDDTable mdd_helper;	
@@ -117,8 +117,8 @@ private:
 
 
 	int num_of_agents;
-    int num_of_vertex;
-	long long makespan_limit = 99999999;
+    	int num_of_vertex;
+	double makespan_limit = 99999999;
 
 
 	vector<Path*> paths;

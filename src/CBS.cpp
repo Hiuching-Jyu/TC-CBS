@@ -4,7 +4,7 @@
 #include "CBS.h"
 #include "SIPP.h"
 #include "SpaceTimeAStar.h"
-
+#include <limits>
 
 // takes the paths_found_initially and UPDATE all (constrained) paths found for agents from curr to start
 // also, do the same for ll_min_f_vals and paths_costs (since its already "on the way").
@@ -945,7 +945,7 @@ bool CBS::solve(const Instance& instance, double _time_limit, int _cost_lowerbou
                 cout << "makespan: " << makespan  <<  ",  makespan_limit  " << makespan_limit <<  endl;
             } else {
 //                cout << "number of agents " << num_of_agents << endl;
-                makespan_limit = 9999999;
+                makespan_limit = std::numeric_limits<double>::infinity();
             }
 //            cout << "makespan: " << makespan  <<  ",  makespan_limit  " << makespan_limit <<  endl;
             if (!succ || makespan > makespan_limit) // makespan out of range, no solution, so prune this node

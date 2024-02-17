@@ -138,7 +138,7 @@ int main(int argc, char** argv)
 	cbs.setPrioritizeConflicts(vm["prioritizingConflicts"].as<bool>());
 	cbs.setDisjointSplitting(vm["disjointSplitting"].as<bool>());
 	cbs.setBypass(vm["bypass"].as<bool>());
-    cbs.setDuplicate(vm["dupConflict"].as<bool>());
+    	cbs.setDuplicate(vm["dupConflict"].as<bool>());
 	cbs.setRectangleReasoning(r);
 	cbs.setCorridorReasoning(c);
 	cbs.setHeuristicType(h);
@@ -153,8 +153,8 @@ int main(int argc, char** argv)
     //////////////////////////////////////////////////////////////////////
 	double runtime = 0;
 	int min_f_val = 0;
-    long long num_of_descendants = 0;
-    cout << "runs" << runs << endl;
+    	long long num_of_descendants = 0;
+    	cout << "runs" << runs << endl;
 	for (int i = 0; i < runs; i++)
 	{
 		cbs.clear();
